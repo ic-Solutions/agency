@@ -1,0 +1,19 @@
+<ul class="grid-lod effect-2" id="grid">
+    {% for item in site.data.blog-upper %}
+    <li>
+        <section class="blog-content">
+            <a href="/blog-details/">
+            <figure>
+                <div class="post-date">
+                    <span>{{item.date}}</span>{{item.month}}
+                </div>
+                <img src="/images/blog-images/{{item.url}}" alt="" class="img-responsive"/>
+            </figure>
+            </a>
+            <article>
+               {{item.article}}
+            </article>
+        </section>
+    </li>
+    {% endfor %}
+</ul>

@@ -1,0 +1,16 @@
+<section class="col-xs-12 col-sm-6 col-md-6 col-lg-6 grid">
+	<ul class="grid-lod effect-2" id="grid">
+        {% for item in site.data.home-upper %}
+        	<li>
+            	<figure class="effect-oscar">
+                <img src="/images/home-images/{{item.url}}" alt="" class="img-responsive"/>
+                <figcaption>
+                        <h2>{{item.heading}}<span>{{item.span}}</span></h2>
+                        <p>{{item.para}}</p>
+                        <a href="works-details.html">{{item.link-text}}</a>
+                </figcaption>
+            </figure>
+            </li>
+        {% endfor %}
+    </ul>
+</section>
